@@ -1,0 +1,50 @@
+public class org.trifort.tochange.ToChange extends java.lang.Object
+{
+    private java.lang.String m_str;
+
+    public void <init>()
+    {
+        org.trifort.tochange.ToChange r0;
+
+        r0 := @this: org.trifort.tochange.ToChange;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    private java.lang.String run()
+    {
+        org.trifort.tochange.ToChange r0;
+
+        r0 := @this: org.trifort.tochange.ToChange;
+        return "hello world";
+    }
+
+    private void save(java.lang.String)
+    {
+        org.trifort.tochange.ToChange r0;
+        java.lang.String r1;
+
+        r0 := @this: org.trifort.tochange.ToChange;
+        r1 := @parameter0: java.lang.String;
+        r0.<org.trifort.tochange.ToChange: java.lang.String m_str> = r1;
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+        org.trifort.tochange.ToChange $r1, r2;
+        java.lang.String r3;
+        java.io.PrintStream system_out0;
+
+        r0 := @parameter0: java.lang.String[];
+        $r1 = new org.trifort.tochange.ToChange;
+        specialinvoke $r1.<org.trifort.tochange.ToChange: void <init>()>();
+        r2 = $r1;
+        r3 = specialinvoke r2.<org.trifort.tochange.ToChange: java.lang.String run()>();
+        system_out0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke system_out0.<java.io.PrintStream: void println(java.lang.String)>(r3);
+        specialinvoke r2.<org.trifort.tochange.ToChange: void save(java.lang.String)>(r3);
+        return;
+    }
+}

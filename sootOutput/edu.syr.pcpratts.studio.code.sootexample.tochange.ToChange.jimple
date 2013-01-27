@@ -1,0 +1,50 @@
+public class edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange extends java.lang.Object
+{
+    private java.lang.String m_str;
+
+    public void <init>()
+    {
+        edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange r0;
+
+        r0 := @this: edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+        return;
+    }
+
+    private java.lang.String run()
+    {
+        edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange r0;
+
+        r0 := @this: edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange;
+        return "hello world";
+    }
+
+    private void save(java.lang.String)
+    {
+        edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange r0;
+        java.lang.String r1;
+
+        r0 := @this: edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange;
+        r1 := @parameter0: java.lang.String;
+        r0.<edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange: java.lang.String m_str> = r1;
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] r0;
+        edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange $r1, r2;
+        java.lang.String r3;
+        java.io.PrintStream system_out0;
+
+        r0 := @parameter0: java.lang.String[];
+        $r1 = new edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange;
+        specialinvoke $r1.<edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange: void <init>()>();
+        r2 = $r1;
+        r3 = specialinvoke r2.<edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange: java.lang.String run()>();
+        system_out0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke system_out0.<java.io.PrintStream: void println(java.lang.String)>(r3);
+        specialinvoke r2.<edu.syr.pcpratts.studio.code.sootexample.tochange.ToChange: void save(java.lang.String)>(r3);
+        return;
+    }
+}
